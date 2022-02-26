@@ -23,6 +23,7 @@ def encode():
 	    frame_bytes[i] = (frame_bytes[i] & 254) | bit
 	frame_modified = bytes(frame_bytes)
 	print('modified bits are:')
+    
 	for i in range(0,8):
 		print(frame_bytes[i])
 	newAudio =  wave.open('songStego.wav', 'wb')
